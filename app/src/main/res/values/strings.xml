@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Under The Weather</string>
+    <string name="retry">Retry</string>
+    <string name="menuitem_refresh">Refresh</string>
+
+
+    <string-array name="array_menu_list">
+        <item>Today</item>
+        <item>Past 7 Days</item>
+        <item>Next 7 Days</item>
+    </string-array>
+
+</resources>

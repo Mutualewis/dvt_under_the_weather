@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".view.HomeView">
+	<!--tools:showIn="@layout/app_bar_home_view"-->
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:fillViewport="true">
+
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#33e18212"
+		android:padding="@dimen/padding"
+		android:weightSum="3"
+		android:orientation="vertical">
+
+
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:background="#33e18212"
+		android:weightSum="14"
+		android:layout_weight="3">
+
+	<TextView
+		android:id="@+id/textView01"
+		style="?android:attr/listSeparatorTextViewStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/customborder"
+		android:drawableRight="@mipmap/ic_action_help"
+		android:text="About"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="12"
+		android:padding="10dp"
+		android:background="#33e18212"
+		android:layout_marginRight="10dp">
+
+			<ListView
+	            android:id="@+id/listAbout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_below="@+id/textView01"
+	            android:minHeight="200dp" >
+	        </ListView>
+	</LinearLayout>
+	</LinearLayout>
+
+	</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>
